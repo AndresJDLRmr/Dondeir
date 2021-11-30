@@ -19,6 +19,9 @@
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
+        <activity
+            android:name=".ClimaActivity"
+            android:exported="false" />
        <activity
             android:name=".HomeActivity"
             android:exported="false"

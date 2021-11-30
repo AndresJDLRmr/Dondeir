@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.adondeirnuevoleon.R
+//import com.example.adondeirnuevoleon.R
 import com.google.firebase.firestore.*
 import data.Places
 import android.R
@@ -29,18 +29,18 @@ class HomeFragment : Fragment() {
     private val dataset = arrayListOf<Places>()
     private val db = FirebaseFirestore.getInstance()
 
-    override fun onCreateView(
+    /*override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val rootView= inflater.inflate(R.layout., container, false)
-        val recyclerView: RecyclerView = rootView.findViewById<RecyclerView>(R.id.barbersRecyclerView)
-        recyclerView.adapter = BarbersAdapter(recyclerView.context, dataset)
+        val recyclerView: RecyclerView = rootView.findViewById<RecyclerView>(R.id.placeRecyclerView)
+        recyclerView.adapter = PlacesAdapter(recyclerView.context, dataset)
         recyclerView.setHasFixedSize(true)
         return inflater.inflate(R.layout.fragment_home, container, false)
 
     }
-
+*/
     private fun eventChangeListener() {
         db.collection("lugares").
                 addSnapshotListener(object : EventListener<QuerySnapshot>{
