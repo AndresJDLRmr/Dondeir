@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="fragments.PlaceFragment"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/placeName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Parque Fundidora"
+        android:textSize="32dp"/>
+
+    <ImageView
+        android:id="@+id/placeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fundidora"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/placeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Parque Fundidora es un parque ubicado en Monterrey, Nuevo León, ideal para pasar un día familiar"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dias"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-black"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:id="@+id/placeHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lunes - Domingo"
+        android:textSize="18dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horarios"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-black"
+        android:drawableLeft="@drawable/ic_clock"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:id="@id/placeHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5:00 - 23:00"
+        android:textSize="18dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicación"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-black"
+        android:drawableLeft="@drawable/ic_location"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/placeLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Av. Colón #1302, Mty, Nuevo León."
+        android:textSize="18dp"
+        android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clima"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-black"
+            android:drawableLeft="@drawable/ic_weather"
+            android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_card">
+        <TextView
+            android:id="@+id/weatherTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="64dp"
+            android:text="24 °C"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/weatherMaxTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temp Máxima: 26° C"
+            android:textSize="20dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/weatherMinTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Temp Mínima: 18 °C"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/weatherRain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Probabilidad lluvia: 60%"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="5dp"
+        android:text="Deja un comentario"/>
+
+    <EditText
+        android:id="@+id/commentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/commentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comentar"
+        android:textSize="18dp"
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

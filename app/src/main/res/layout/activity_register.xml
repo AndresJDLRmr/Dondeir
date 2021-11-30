@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="18dp"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/ic_user"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrate Aquí"
+        android:textSize="32dp"
+        />
+   <EditText
+       android:id="@+id/emailEditText"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Correo Electrónico"
+       android:layout_marginBottom="18dp"
+       android:padding="12dp"
+       android:fontFamily="sans-serif-black"/>
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:layout_marginBottom="18dp"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-black"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/emailConfirmationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmar Contraseña"
+        android:layout_marginBottom="18dp"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-black"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/emailRegisterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Regitrarse"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-black"
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="5dp"
+        android:padding="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O tambien"
+        android:textSize="24dp"/>
+
+    <LinearLayout
+        android:id="@+id/facebookRegisterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:gravity="center"
+        android:clickable="true"
+        android:padding="5dp"
+        android:layout_marginBottom="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro con Facebook"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-black"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/logo_facebook"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/googleRegisterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f80000"
+        android:gravity="center"
+        android:clickable="true"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro con Google"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-black"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/logo_google"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

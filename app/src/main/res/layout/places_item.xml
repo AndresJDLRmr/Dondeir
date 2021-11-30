@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_card"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/placeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fundidora"/>
+
+    <TextView
+        android:id="@+id/placeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parque Fundidora"
+        android:textSize="32dp"
+        android:layout_marginBottom="5dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_clock"
+        android:text=" Horario:"
+        android:textSize="18dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/placeHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="5:00 - 22:00"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/placeInfoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Leer Mas"
+        android:textSize="18dp"
+        android:textColorHint="@color/white"/>
+
+</LinearLayout>

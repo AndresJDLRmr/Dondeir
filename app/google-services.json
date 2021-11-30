@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "49962965250",
+    "project_id": "adondeirnl-d542a",
+    "storage_bucket": "adondeirnl-d542a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49962965250:android:e994555e5373b9ba170a1b",
+        "android_client_info": {
+          "package_name": "com.example.adondeirnuevoleon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49962965250-dq0bob0kgpk7pvs0n10eimu8t379dn94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5eIiT5qb2CSngJUhub4o6ZEDvn6KAaDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49962965250-dq0bob0kgpk7pvs0n10eimu8t379dn94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
